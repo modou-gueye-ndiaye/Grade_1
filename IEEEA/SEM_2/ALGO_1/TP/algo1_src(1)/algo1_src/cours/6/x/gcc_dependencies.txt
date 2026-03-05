@@ -1,0 +1,5 @@
+$ gcc -MM x.c y1.c y2.c z.c
+x.o: x.c y1.h y2.h
+y1.o: y1.c y1.h z.h
+y2.o: y2.c y2.h z.h
+z.o: z.c z.h
