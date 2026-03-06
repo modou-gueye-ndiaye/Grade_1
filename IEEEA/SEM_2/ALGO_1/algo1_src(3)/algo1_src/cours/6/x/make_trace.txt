@@ -1,0 +1,15 @@
+$ make clean
+rm -f x.o y1.o y2.o z.o x
+$ make y1.o
+gcc -std=c2x -Wall -Wconversion -Werror -Wextra -Wpedantic -Wwrite-strings -O2
+ -c -o y1.o y1.c
+$ make y1.o
+make: « y1.o » est à jour.
+$ make
+gcc -std=c2x -Wall -Wconversion -Werror -Wextra -Wpedantic -Wwrite-strings -O2
+ -c -o x.o x.c
+gcc -std=c2x -Wall -Wconversion -Werror -Wextra -Wpedantic -Wwrite-strings -O2
+ -c -o y2.o y2.c
+gcc -std=c2x -Wall -Wconversion -Werror -Wextra -Wpedantic -Wwrite-strings -O2
+ -c -o z.o z.c
+gcc x.o y1.o y2.o z.o  -o x

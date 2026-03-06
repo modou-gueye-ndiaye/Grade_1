@@ -1,0 +1,24 @@
+13-01-2026
+* création du dépôt algo1_cfg.zip
+* ajouts
+  - ChangeLog
+  - config/*
+* notes
+  - le script config/config.sh est adapté à la configuration de geany pour la
+    pratique du C au standard C23 dans les salles de TP et sur toute machine
+    sous Linux Mint, Ubuntu...
+  - il modifie les fichiers de configuration installés par défaut par geany
+    ~/.config/geany/geany.conf et ~/.config/geany/filedefs/filetypes.c
+  - il ajoute les fichiers de configuration ~/.config/geany/keybindings.conf
+    (ctrl + alt + a pour uncrustify) et ~/.config/geany/tags/std23.c.tags
+  - il ajoute également un fichier de configuration pour uncrustify à la racine
+    du dossier utilisateur dépendant de la version courante de uncrustify
+    (.uncrustify078_c.cfg pour la version 0.78)
+  - sur une machine personnelle, il faut supprimer le fichier std99.c.tags
+    installé par défaut par geany dans le dossier /usr/share/geany/tags/ afin
+    d'éviter les interférences avec le fichier de configuration std23.c.tags
+    déposé dans le dossier ~/.config/geany/tags/ par le script
+  - la version actuelle du fichier de configuration std23.c.tags est une
+    amélioration sensible de la version 24.10.1 : identificateurs non standard
+    supprimés, identificateurs rectifiés, identificateurs ajoutés (« Mandatory
+    macros », « Predefined identifiers »)

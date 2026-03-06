@@ -1,0 +1,10 @@
+18-01-2025
+* modification
+  - courstd/3/makefile
+    suppression de « -Wstack-protector » dans « CFLAGS »
+
+17-01-2025
+* création du dépôt algo1_src.zip
+* ajouts
+  - courstd/2/*
+  - courstd/3/*
