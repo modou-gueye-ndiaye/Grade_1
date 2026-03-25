@@ -4,9 +4,9 @@
 #define NAME_LENGTH_MAX 63
 
 typedef struct {
-  char lastname[NAME_LENGTH_MAX + 1];   //  nom
-  char firstname[NAME_LENGTH_MAX + 1];  //  prénom(s)
-  int yearfirstapp;                     //  année de première apparition
+  char lastname[NAME_LENGTH_MAX + 1];  
+  char firstname[NAME_LENGTH_MAX + 1];  
+  int yearfirstapp;                     
 } character;
 
 void character_display_names(const character *q);

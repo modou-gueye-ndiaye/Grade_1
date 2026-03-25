@@ -13,7 +13,7 @@ void mem_swap(void *s1, void *s2, size_t size);
 //  mem_copy : copie de contenu de la zone mémoire de taille size pointée par
 //    src à partir de la zone mémoire pointée par dest.
 //  AE : les deux zones ne se recouvrent pas
-//  AS : le contenu de zone source a été copié vers la zone destinataire
+//  AS : le contenu de la zone source a été copié vers la zone destinataire
 void mem_copy(void *dest, const void *src, size_t size);
 
 void print2_int(int *ptr1, int *ptr2);
